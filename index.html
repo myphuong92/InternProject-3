@@ -7,15 +7,15 @@
   <link href="./input.css" rel="stylesheet">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <!-- Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
   <header class="fixed w-full z-10">
     <nav class="flex justify-between items-center w-[92%] mx-auto py-2">
-      <div><img src="/source/icon/Logo.png" alt=""></div>
+      <div class="h-full"><img class="home-banner-img" src="/source/icon/Logo.png" alt=""></div>
       <div class="nav-links md:static absolute bg-white md:bg-inherit md:min-h-fit min-h-[50vh] left-0 top-[-520%] md:w-auto w-full flex items-center px-5">
         <ul class="flex flex-col md:flex-row  md:items-center md:gap-[4vw] gap-8 inter-bold">
           <li class="selected"><a class="">Về chúng tôi</a></li>
@@ -29,7 +29,9 @@
       <div class="flex gap-2">
         <span class="material-symbols-outlined text-white">search</span>
         <img src="/source/icon/GB.png" alt="">
-        <span onclick="ToggleMenu(this)" class="material-symbols-outlined text-white md:hidden">menu</span>
+        <div class="md:hidden">
+          <span onclick="ToggleMenu(this)" class="material-symbols-outlined text-white">menu</span>
+        </div>
       </div>
     </nav>
     
@@ -40,42 +42,239 @@
         <div>
           <img src="/source/img/home-banner.png" alt="">
         </div>
-        <div class="content flex flex-col gap-5 absolute bottom-10 left-12 text-white w-1/2">
-          <p class="space-grotesk-bold text-6xl">American Auditing</p>
+        <div class="content flex flex-col gap-5 absolute bottom-10 left-12 text-white w-4/5 md:w-1/2">
+          <p class="space-grotesk-bold text-6xl text-heading">American Auditing</p>
           <p class="space-grotesk-medium text-sm text-desc">American Auditing (AA) activities throughout Viet Nam, with head office in Ho Chi Minh, Hanoi Branch and offices in Da Nang and Can Tho</p>
           <button class="p-3 rounded-3xl w-1/3 border-white border-2">Xem thêm</button>
         </div>
       </div>
     </section>
-    <section>
-      <div class="bg-white h-[600px]">
+    <section class="responsive-section bg-white h-[290px] md:h-[500px] lg:h-[600px]">
+      
         <div class=" h-full flex justify-center items-center">
           <div class="relative flex justify-center items-center">
-            <p class="space-grotesk-normal text-5xl w-9/12 text-center ">Our business philosophy in Vietnam is simple - We want to be the market leader in terms of client service</p>
+            <p class="space-grotesk-normal text-2xl md:text-5xl md:w-[90%] text-center">Our business philosophy in Vietnam is simple - We want to be the market leader in terms of client service</p>
             <img class="quote-begin absolute" src="/source/icon/quote-begin.png" alt="">
             <img class="quote-end absolute" src="/source/icon/quote-end.png" alt="">
           </div>
-        </div>
+        
       </div>
     </section>
-    <section>
-      <div>
+    <section class="responsive-section bg-[#F2F2F5]">
+      <div class="grid grid-cols-1 gap-14">
         <div class="grid grid-cols-1 justify-items-center gap-5">
           <p class="text-title-sm">Our Services</p>
-          <p class="text-desc-lg">dịch vụ và giải pháp</p>
+          <p class="text-desc-lg text-sub-heading">dịch vụ và giải pháp</p>
         </div>
-        <div class="grid grid-cols-3 gap-10">
-          <div>
-
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-10">
+          <div class="card-service grid grid-cols-1 gap-4 selected-card-service">
+            <img src="/source/icon/card-icon-1.png" alt="">
+            <p class="space-grotesk-bold text-xl text-title">Các dịch vụ thuế Việt Nam</p>
+            <p class="roboto-regular line-clamp-3 text-desc">Tất cả các vấn đề về thuế của khách hàng thuộc AA đều được chuyên gia thuế giàu kinh nghiệm của chúng</p>
           </div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="card-service grid grid-cols-1 gap-4 bg-white">
+            <img src="/source/icon/card-icon-2.png" alt="">
+            <p class="space-grotesk-bold text-xl text-title">Các Dịch Vụ Kiểm Toán</p>
+            <p class="roboto-regular line-clamp-3 text-desc">Kiểm toán và thẩm định là một bộ phận chủ yếu trong hoạt động của chúng tôi.Nguyên lý kiểm toán của </p>
+          </div>
+          <div class="card-service grid grid-cols-1 gap-4 bg-white">
+            <img src="/source/icon/card-icon-3.png" alt="">
+            <p class="space-grotesk-bold text-xl text-title">Dịch Vụ Tư Vấn & Đảm bảo</p>
+            <p class="roboto-regular line-clamp-3 text-desc">Dịch vụ đảm bảo chuyên nghiệp của AA cung cấp các phương pháp luận đồng nhất, tiếp cận kiến thức pho...</p>
+          </div>
+          <div class="card-service grid grid-cols-1 gap-4">
+            <img src="/source/icon/card-icon-1.png" alt="">
+            <p class="space-grotesk-bold text-xl text-title">Các dịch vụ thuế Việt Nam</p>
+            <p class="roboto-regular line-clamp-3 text-desc">Tất cả các vấn đề về thuế của khách hàng thuộc AA đều được chuyên gia thuế giàu kinh nghiệm của chúng</p>
+          </div>
+          <div class="card-service grid grid-cols-1 gap-4 bg-white">
+            <img src="/source/icon/card-icon-2.png" alt="">
+            <p class="space-grotesk-bold text-xl">Các Dịch Vụ Kiểm Toán</p>
+            <p class="roboto-regular line-clamp-3 text-desc">Kiểm toán và thẩm định là một bộ phận chủ yếu trong hoạt động của chúng tôi.Nguyên lý kiểm toán của </p>
+          </div>
+          <div class="card-service grid grid-cols-1 gap-4 bg-white">
+            <img src="/source/icon/card-icon-3.png" alt="">
+            <p class="space-grotesk-bold text-xl">Dịch Vụ Tư Vấn & Đảm bảo</p>
+            <p class="roboto-regular line-clamp-3 text-desc">Dịch vụ đảm bảo chuyên nghiệp của AA cung cấp các phương pháp luận đồng nhất, tiếp cận kiến thức pho...</p>
+          </div>
+          
         </div>
       </div>
     </section>
+    <section class="responsive-section">
+      <div class="grid grid-cols-1 gap-14">
+        <div class="grid grid-cols-1 justify-items-center gap-5">
+          <p class="text-title-sm">News</p>
+          <p class="text-desc-lg text-sub-heading">tư vấn doanh nghiệp</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8">
+          <div class="card-consult grid grid-cols-1 gap-4">
+            <img class="full-img" src="/source/img/consult-1.png" alt="">
+            <div class="content grid grid-cols-1 gap-2">
+              <p class="consult-date">October 12, 2024</p>
+              <p class="consult-title selected-consult-card">Tư vấn DNNN</p>
+              <p class="consult-desc">Tư vấn Doanh nghiệp Việt Nam và Doanh nghiệp Nhà nước AA có một đội ngũ tư vấn dành riêng cho Doanh n...</p>
+            </div>
+          </div>
+          <div class="card-consult grid grid-cols-1 gap-4">
+            <img class="full-img" src="/source/img/consult-2.png" alt="">
+            <div class="content grid grid-cols-1 gap-2">
+              <p class="consult-date">October 12, 2024</p>
+              <p class="consult-title">Thúc đẩy tăng trưởng</p>
+              <p class="consult-desc">Tại Việt Nam, chúng tôi được công nhận là công ty hàng đầu trong việc cung cấp các dịch vụ tư vấn ch... </p>
+            </div>
+          </div>
+          <div class="card-consult grid grid-cols-1 gap-4">
+            <img class="full-img" src="/source/img/consult-3.png" alt="">
+            <div class="content grid grid-cols-1 gap-2">
+              <p class="consult-date">October 12, 2024</p>
+              <p class="consult-title">Hỗ trợ giao dịch</p>
+              <p class="consult-desc">Trong thế giới kinh doanh, các tổ chức liên quan đến sáp nhập và mua lại, tiếp quản và tư nhân hóa c...</p>
+            </div>
+          </div>
+          <div class="card-consult grid grid-cols-1 gap-4">
+            <img class="full-img" src="/source/img/consult-4.png" alt="">
+            <div class="content grid grid-cols-1 gap-2">
+              <p class="consult-date">October 12, 2024</p>
+              <p class="consult-title">Tài chính doanh nghiệp</p>
+              <p class="consult-desc">Các chuyên gia tài chính doanh nghiệp của chúng tôi xem xét các vấn đề của doanh nghiệp từ cả hai qu...</p>
+            </div>
+          </div>
+          <div class="card-consult grid grid-cols-1 gap-4">
+            <img class="full-img" src="/source/img/consult-5.png" alt="">
+            <div class="content grid grid-cols-1 gap-2">
+              <p class="consult-date">October 12, 2024</p>
+              <p class="consult-title">Tư vấn DNNN</p>
+              <p class="consult-desc">Tư vấn Doanh nghiệp Việt Nam và Doanh nghiệp Nhà nước AA có một đội ngũ tư vấn dành riêng cho Doanh n...</p>
+            </div>
+          </div>
+          <div class="card-consult grid grid-cols-1 gap-4">
+            <img class="full-img" src="/source/img/consult-6.png" alt="">
+            <div class="content grid grid-cols-1 gap-2">
+              <p class="consult-date">October 12, 2024</p>
+              <p class="consult-title">Thúc đẩy tăng trưởng</p>
+              <p class="consult-desc">Tại Việt Nam, chúng tôi được công nhận là công ty hàng đầu trong việc cung cấp các dịch vụ tư vấn ch... </p>
+            </div>
+          </div>
+          <div class="card-consult grid grid-cols-1 gap-4">
+            <img class="full-img" src="/source/img/consult-7.png" alt="">
+            <div class="content grid grid-cols-1 gap-2">
+              <p class="consult-date">October 12, 2024</p>
+              <p class="consult-title">Hỗ trợ giao dịch</p>
+              <p class="consult-desc">Trong thế giới kinh doanh, các tổ chức liên quan đến sáp nhập và mua lại, tiếp quản và tư nhân hóa c...</p>
+            </div>
+          </div>
+          <div class="card-consult grid grid-cols-1 gap-4">
+            <img class="full-img" src="/source/img/consult-8.png" alt="">
+            <div class="content grid grid-cols-1 gap-2">
+              <p class="consult-date">October 12, 2024</p>
+              <p class="consult-title">Tài chính doanh nghiệp</p>
+              <p class="consult-desc">Các chuyên gia tài chính doanh nghiệp của chúng tôi xem xét các vấn đề của doanh nghiệp từ cả hai qu...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="responsive-section bg-[#3E7BFA]">
+      <div class="grid grid-cols-3 md:grid-cols-5 gap-5">
+        <img src="/source/icon/home-logo-banner.png" alt="">
+        <img src="/source/icon/home-logo-banner.png" alt="">
+        <img src="/source/icon/home-logo-banner.png" alt="">
+        <img class="hidden md:block" src="/source/icon/home-logo-banner.png" alt="">
+        <img class="hidden md:block" src="/source/icon/home-logo-banner.png" alt="">
+      </div>
+    </section>
+    <section class="responsive-section bg-white">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="grid grid-cols-1 gap-6">
+          <div class="content grid grid-cols-1 gap-4">
+            <p class="text-title-sm">Contact Us</p>
+            <p class="text-desc-lg text-[#0E2C5B] text-sub-heading">AAA luôn mong muốn được kết nối với Quý Nhà đầu tư</p>
+          </div>
+          <div class="grid grid-cols-1 gap-4 divide-y-2 divide-gray-600 divide-dashed">
+            <div class="flex gap-8">
+              <img src="/source/icon/contact-phone.png" alt="">
+              <div class="content flex flex-col justify-center">
+                <p class="inter-regular text-[#121D50]">Hãy gọi cho chúng tôi</p>
+                <p class="space-grotesk-bold text-2xl">+84 999 000-000</p>
+              </div>
+            </div>
+            <div class="flex gap-8 pt-4">
+              <img src="/source/icon/contact-email.png" alt="">
+              <div class="content flex flex-col justify-center">
+                <p class="inter-regular text-[#121D50]">Hãy gọi cho chúng tôi</p>
+                <p class="space-grotesk-bold text-2xl">+84 999 000-000</p>
+              </div>
+            </div>
+            <div class="flex gap-8 pt-4">
+              <img src="/source/icon/contact-location.png" alt="">
+              <div class="content flex flex-col justify-center">
+                <p class="inter-regular text-[#121D50]">Hãy gọi cho chúng tôi</p>
+                <p class="space-grotesk-bold text-2xl">+84 999 000-000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#EDF0F3] grid grid-cols-1 form-contact p-8 md:p-16 gap-6 rounded-xl">
+          <p class="title inter-bold text-2xl text-[#0E2C5B]">Liên hệ với chúng tôi</p>
+          <div class="grid grid-cols-1 gap-4">
+            <div class="grid grid-cols-1 gap-4">
+              <div class="flex flex-col gap-3">
+                <p class="form-title">Họ và tên</p>
+                <input class="p-5 bg-white rounded-lg inter-medium" type="text" placeholder="Ex: AAA" name="" id="">
+              </div>
+              <div class="flex flex-col gap-3">
+                <p class="form-title">Email</p>
+                <input class="p-5 bg-white rounded-lg inter-medium" type="email" placeholder="Ex: aaa@gmail.com" name="" id="">
+              </div>
+              <div class="flex flex-col gap-3">
+                <p class="form-title">Điện thoại</p>
+                <input class="p-5 bg-white rounded-lg inter-medium" type="number" placeholder="Ex: +84 999 000-000" name="" id="">
+              </div>
+              <div class="flex flex-col gap-3">
+                <p class="form-title">Tin nhắn</p>
+                <input class="p-5 bg-white rounded-lg inter-medium" type="text" placeholder="Viết tin nhắn cho chúng tôi..." name="" id="">
+              </div>
+            </div>
+            <button class="py-4 px-14 bg-[#EC4621] text-white tracking-widest space-grotesk-medium rounded-xl lg:w-3/4 text-lg">Gửi thông tin</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="responsive-section bg-[#090E23] grid grid-cols-1 gap-y-10 md:gap-y-20 divide-y-2 divide-white divide-dashed">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-0 text-white">
+          <div class=" w-5/6 lg:w-[60%]">
+            <img src="/source/icon/logo-footer.png" alt="">
+            <p class=" roboto-regular text-desc mt-3">Our business philosophy in Vietnam is simple - We want to be the market leader in terms of client service</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2  gap-5 ">
+            <div class="flex flex-col gap-4">
+              <p class="inter-bold text-2xl">Navigation</p>
+              <div class="nav-footer inter-regular flex flex-col gap-3">
+                <a href="">Về chúng tôi</a>
+                <a href="">Dịch vụ và giải pháp</a>
+                <a href="">Tư vấn doanh nghiệp</a>
+                <a href="">Thuế</a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4">
+              <p class="inter-bold text-2xl">Subscribe Us</p>
+              <div class="flex flex-col gap-3">
+                <input class="p-4 rounded-xl roboto-regular" type="email" name="" id="" placeholder="Enter Your Email">
+                <button class="py-4 px-5 lg:px-14  bg-[#EC4621] text-white space-grotesk-medium rounded-xl text-lg">Subscribe Now</button>
+              </div>
+              
+            </div>
+          </div>
+          
+          
+        </div>
+        <div class="pt-12">
+          <p class="uppercase text-white text-center space-grotesk-medium text-lg">Copyright &copy; 2023 AAA</p>
+        </div>
+      </div>
+    </footer>
   </main>
   <script>
     const navLinks=document.querySelector('.nav-links')

@@ -8,10 +8,36 @@
     .text-desc-lg{
         @apply uppercase space-grotesk-bold text-5xl
     }
+    .responsive-section{
+        @apply p-[20px] md:p-[40px] lg:p-[100px]
+    }
+    .full-img{
+        @apply w-full object-cover
+    }
+    /* Card service */
+    .selected-card-service{
+        @apply bg-[#121D50] text-white !important;
+    }
+    /* Consult */
+    .consult-date{
+        @apply inter-medium text-[12px] text-[8F90A6]
+    }
+    .consult-title{
+        @apply text-[#0E2C5B] inter-bold text-xl
+    }
+    .selected-consult-card{
+        @apply text-[#3E7BFA] !important;
+    }
+    .consult-desc{
+        @apply inter-regular text-sm line-clamp-3
+    }
+    /* Form contact */
+    .form-title{
+        @apply inter-medium text-sm uppercase tracking-wider
+    }
 }
 body {
     line-height: 1.5;
-    background-color: white;
     /* min-width: 100vh; */
     width: 100%;
     /* prevent the user from scrolling horizontally */
@@ -27,7 +53,11 @@ body {
 }
 /* // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 300 to 700 */
-
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 .space-grotesk-normal {
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
@@ -50,6 +80,20 @@ body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight:700;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+  }
+  .inter-medium {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:500;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+  }
+  .inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
     font-style: normal;
     font-variation-settings:"slnt" 0;
   }
@@ -96,12 +140,25 @@ header nav a{
     
 }
 .home .quote-begin{
-    left: 140px;
+    left: 40px;
     top: -70px;
 }
 .home .quote-end{
-    bottom: -70px;
-    right: 225px;
+    bottom: -60px;
+    right: 60px;
+}
+.home .consult-title{
+    font-size: 16px;
+}
+.home .consult-desc{
+    font-size: 14px;
+}
+/* COMPONENT */
+.card-service{
+    padding: 32px;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
 }
 @media screen and (max-width: 767px) {
 	.container {
@@ -112,7 +169,7 @@ header nav a{
 		font-size: 25px;
 	}
     .text-sub-heading {
-		font-size: 2.5rem;
+		font-size: 2.25rem;
 	}
     .text-desc{
         font-size: 16px;
@@ -132,6 +189,25 @@ header nav a{
         color: #3E7BFA;
     
     }
+    /* HOME */
+    .home-banner{
+        height: 450px;
+    }
+    .home-banner-img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+    .home .quote-begin{
+        width: 35px;
+    left: 15px;
+    top: -35px;
+    }
+    .home .quote-end{
+        width: 35px;
+        bottom: -28px;
+        right: 50px;
+    }
 }
 @media (min-width: 768px) and (max-width: 1025px) {
 	.container {
@@ -142,4 +218,8 @@ header nav a{
 	.text-heading {
 		font-size: 38px;
 	}
+    /* HOME */
+    .home-banner{
+        height: 620px;
+    }
 }
