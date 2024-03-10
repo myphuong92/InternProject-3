@@ -18,6 +18,9 @@
     .selected-card-service{
         @apply bg-[#121D50] text-white !important;
     }
+    .selected-service{
+        @apply bg-[#3E7BFA] text-white !important;
+    }
     /* Consult */
     .consult-date{
         @apply inter-medium text-[12px] text-[8F90A6]
@@ -139,26 +142,62 @@ header nav a{
     background-repeat: no-repeat;
     
 }
-.home .quote-begin{
+#home .quote-begin{
     left: 40px;
     top: -70px;
 }
-.home .quote-end{
+#home .quote-end{
     bottom: -60px;
     right: 60px;
 }
-.home .consult-title{
-    font-size: 16px;
+
+/* SERVICES */
+#services .banner{
+    background-image: url('/source/img/service-banner.png');
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
-.home .consult-desc{
-    font-size: 14px;
+/* Services Detail */
+#services-detail .banner{
+    background-image: url('/source/img/service-banner.png');
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+#about .banner{
+    background-image: url('/source/img/service-banner.png');
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+#contact .banner{
+    background-image: url('/source/img/service-banner.png');
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
 /* COMPONENT */
+/* Card service */
 .card-service{
     padding: 32px;
     border-radius: 15px;
     background-color: white;
     color: black;
+}
+/* Consult  */
+.consult-title{
+    font-size: 16px;
+}
+.consult-desc{
+    font-size: 14px;
+}
+/* ABOUT CARD */
+.about-number-card{
+    top: -31px;
+    right: 15px;
+}
+/* google map */
+.google-map{
+    overflow: hidden;
+    border: 0;
+    width: 100%;
 }
 @media screen and (max-width: 767px) {
 	.container {
@@ -198,12 +237,12 @@ header nav a{
         object-fit: cover;
         height: 100%;
     }
-    .home .quote-begin{
+    #home .quote-begin{
         width: 35px;
     left: 15px;
     top: -35px;
     }
-    .home .quote-end{
+    #home .quote-end{
         width: 35px;
         bottom: -28px;
         right: 50px;
@@ -219,7 +258,7 @@ header nav a{
 		font-size: 38px;
 	}
     /* HOME */
-    .home-banner{
+    #home-banner{
         height: 620px;
     }
 }
