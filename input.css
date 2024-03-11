@@ -331,20 +331,7 @@ header nav a{
         right: 50px;
     }
     /* COMPONENT */
-    /* HEADER */
-    .hideOnMobile{
-        display: none;
-    }
-    .sidebar{
-        width: 100%;
-    }
-    .sidebar li a{
-        color: black;
-    }
-    .language{
-        width: 25px;
-        height: 25px;
-    }
+    
     /* Swiper */
     .swiper-button-next:after, .swiper-button-prev:after{
         font-size: 25px !important;
@@ -362,5 +349,21 @@ header nav a{
     /* HOME */
     #home-banner{
         height: 620px;
+    }
+    /* COMPONENT */
+    .hideOnMobile{
+        display: none;
+    }
+    /* HEADER */
+    
+    .sidebar{
+        width: 100%;
+    }
+    .sidebar li a{
+        color: black;
+    }
+    .language{
+        width: 25px;
+        height: 25px;
     }
 }

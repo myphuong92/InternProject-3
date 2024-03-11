@@ -3201,25 +3201,6 @@ header nav a{
 
   /* COMPONENT */
 
-  /* HEADER */
-
-  .hideOnMobile{
-    display: none;
-  }
-
-  .sidebar{
-    width: 100%;
-  }
-
-  .sidebar li a{
-    color: black;
-  }
-
-  .language{
-    width: 25px;
-    height: 25px;
-  }
-
   /* Swiper */
 
   .swiper-button-next:after, .swiper-button-prev:after{
@@ -3241,6 +3222,27 @@ header nav a{
 
   #home-banner{
     height: 620px;
+  }
+
+  /* COMPONENT */
+
+  .hideOnMobile{
+    display: none;
+  }
+
+  /* HEADER */
+
+  .sidebar{
+    width: 100%;
+  }
+
+  .sidebar li a{
+    color: black;
+  }
+
+  .language{
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -3394,6 +3396,10 @@ header nav a{
 }
 
 @media (min-width: 1025px) {
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:h-\[572px\] {
     height: 572px;
   }
@@ -3416,6 +3422,10 @@ header nav a{
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:gap-\[4vw\] {
+    gap: 4vw;
   }
 
   .lg\:p-16 {
