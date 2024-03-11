@@ -15,7 +15,36 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
       </head>
 <body>
-    <header></header>
+  <header class="fixed w-full z-10">
+    <nav class="flex justify-between items-center w-[92%] mx-auto py-2 ">
+      <a href="/index.html" class="h-full cursor-pointer"><img class="home-banner-img" src="source/icon/Logo.png" alt=""></a>
+      <div class="nav-links md:bg-inherit min-h-fit w-auto md:flex items-center px-5">
+        <ul class="header-line flex flex-row  items-center gap-[4vw] inter-bold">
+          <li><a href="/about-us.html" class="hideOnMobile cursor-pointer">Về chúng tôi</a></li>
+          <li><a href="/services.html" class="hideOnMobile cursor-pointer">Dịch Vụ Và Giải Pháp</a></li>
+          <li><a class="hideOnMobile cursor-pointer">Tư Vấn Doanh Nghiệp</a></li>
+          <li><a class="hideOnMobile cursor-pointer">Thuế</a></li>
+          <li><a class="hideOnMobile cursor-pointer">Các ngành nghề</a></li>
+          <li><a href="/contact.html" class="hideOnMobile cursor-pointer">Liên hệ</a></li>
+        </ul>
+        <ul class="sidebar">
+          <li class="close-icon" onclick="hideSidebar()"><a><span class="material-symbols-outlined text-black">close</span></a></li>
+          <li><a>Tư Vấn Doanh Nghiệp</a></li>
+          <li><a>Thuế</a></li>
+          <li><a>Các ngành nghề</a></li>
+          <li><a>Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="flex gap-2">
+        <span class="material-symbols-outlined text-white">search</span>
+        <img class="language" src="source/icon/GB.png" alt="">
+        <div class="md:hidden">
+          <span onclick="showSidebar()" class="material-symbols-outlined text-white">menu</span>
+        </div>
+      </div>
+    </nav>
+    
+  </header>
     <main id="services">
         <section>
             <div class="relative banner h-[400px] lg:h-[572px]">
@@ -36,32 +65,32 @@
                 <p class="text-desc-lg text-sub-heading">dịch vụ và giải pháp</p>
               </div>
               <div class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-10">
-                <div class="card-service grid grid-cols-1 gap-4 bg-white hover:selected-card-service cursor-pointer">
+                <div class="card-service grid grid-cols-1 gap-4 hover:selected-card-service cursor-pointer">
                   <img src="source/icon/card-icon-1.png" alt="">
                   <p class="space-grotesk-bold text-xl text-title">Các dịch vụ thuế Việt Nam</p>
                   <p class="roboto-regular line-clamp-3 text-desc">Tất cả các vấn đề về thuế của khách hàng thuộc AA đều được chuyên gia thuế giàu kinh nghiệm của chúng</p>
                 </div>
-                <div class="card-service grid grid-cols-1 gap-4 bg-white hover:selected-card-service cursor-pointer">
+                <div class="card-service grid grid-cols-1 gap-4 hover:selected-card-service cursor-pointer">
                   <img src="source/icon/card-icon-2.png" alt="">
                   <p class="space-grotesk-bold text-xl text-title">Các Dịch Vụ Kiểm Toán</p>
                   <p class="roboto-regular line-clamp-3 text-desc">Kiểm toán và thẩm định là một bộ phận chủ yếu trong hoạt động của chúng tôi.Nguyên lý kiểm toán của </p>
                 </div>
-                <div class="card-service grid grid-cols-1 gap-4 bg-white hover:selected-card-service cursor-pointer">
+                <div class="card-service grid grid-cols-1 gap-4 hover:selected-card-service cursor-pointer">
                   <img src="source/icon/card-icon-3.png" alt="">
                   <p class="space-grotesk-bold text-xl text-title">Dịch Vụ Tư Vấn & Đảm bảo</p>
                   <p class="roboto-regular line-clamp-3 text-desc">Dịch vụ đảm bảo chuyên nghiệp của AA cung cấp các phương pháp luận đồng nhất, tiếp cận kiến thức pho...</p>
                 </div>
-                <div class="card-service grid grid-cols-1 gap-4">
-             hover:selected-card-service      <img src="source/icon/card-icon-1.png" alt="">
+                <div class="card-service grid grid-cols-1 gap-4 hover:selected-card-service cursor-pointer">
+                  <img src="source/icon/card-icon-1.png" alt="">
                   <p class="space-grotesk-bold text-xl text-title">Các dịch vụ thuế Việt Nam</p>
                   <p class="roboto-regular line-clamp-3 text-desc">Tất cả các vấn đề về thuế của khách hàng thuộc AA đều được chuyên gia thuế giàu kinh nghiệm của chúng</p>
                 </div>
-                <div class="card-service grid grid-cols-1 gap-4 bg-white hover:selected-card-service cursor-pointer">
+                <div class="card-service grid grid-cols-1 gap-4 hover:selected-card-service cursor-pointer">
                   <img src="source/icon/card-icon-2.png" alt="">
                   <p class="space-grotesk-bold text-xl">Các Dịch Vụ Kiểm Toán</p>
                   <p class="roboto-regular line-clamp-3 text-desc">Kiểm toán và thẩm định là một bộ phận chủ yếu trong hoạt động của chúng tôi.Nguyên lý kiểm toán của </p>
                 </div>
-                <div class="card-service grid grid-cols-1 gap-4 bg-white hover:selected-card-service cursor-pointer">
+                <div class="card-service grid grid-cols-1 gap-4 hover:selected-card-service cursor-pointer">
                   <img src="source/icon/card-icon-3.png" alt="">
                   <p class="space-grotesk-bold text-xl">Dịch Vụ Tư Vấn & Đảm bảo</p>
                   <p class="roboto-regular line-clamp-3 text-desc">Dịch vụ đảm bảo chuyên nghiệp của AA cung cấp các phương pháp luận đồng nhất, tiếp cận kiến thức pho...</p>
@@ -179,5 +208,7 @@
           </div>
         </div>
       </footer>
+      <script src="script.js"></script>
+
 </body>
 </html>

@@ -39,6 +39,10 @@
         @apply inter-medium text-sm uppercase tracking-wider
     }
 }
+:root {
+    --nav-height: 70px;
+
+}
 body {
     line-height: 1.5;
     /* min-width: 100vh; */
@@ -120,20 +124,71 @@ body {
 	line-height: calc(32.4 / 18);
 }
 /* HEADER */
+header{
+    transition: transform 0.2s;
+}
 header nav a{
     color: white;
     font-weight: 700;
 }
 
-.selected{
+.selected-link{
     background-color: white;
     padding: 10px 20px;
     border-radius: 10px;
 }
-.selected a{
+.selected-link a{
     color: #3E7BFA;
 
 }
+.sidebar{
+    
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    opacity: 0;
+    /* position: fixed;
+    top: 0;
+    right: 0; */
+    height: 100vh;
+    width: 400px;
+    z-index: 999;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    /* display: none; */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: 0.5s ease-in-out;
+}
+.sidebar.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.sidebar li:first-child {
+    margin-right: auto;
+}
+
+.sidebar li {
+    height: var(--nav-height);
+}
+
+.sidebar a {
+    height: 100%;
+    padding: 0px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
 /* HOME */
 .home-banner{
     background-image: url('/source/img/banner-color.png');
@@ -149,6 +204,9 @@ header nav a{
 #home .quote-end{
     bottom: -60px;
     right: 60px;
+}
+#home .img-home-banner{
+    height: -webkit-fill-available;
 }
 
 /* SERVICES */
@@ -180,13 +238,21 @@ header nav a{
     border-radius: 15px;
     background-color: white;
     color: black;
+    transition: background-color 0.3s;
 }
+
 /* Consult  */
+.card-consult:hover .consult-title{
+    color: #3E7BFA;
+}
 .consult-title{
     font-size: 16px;
 }
 .consult-desc{
     font-size: 14px;
+}
+.card-consult {
+    cursor: pointer;
 }
 /* ABOUT CARD */
 .about-number-card{
@@ -198,6 +264,24 @@ header nav a{
     overflow: hidden;
     border: 0;
     width: 100%;
+}
+/* swiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    background-image: linear-gradient(to right, #0E2C5B, #164BA0, #619DFD);
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: white !important;
 }
 @media screen and (max-width: 767px) {
 	.container {
@@ -216,9 +300,7 @@ header nav a{
 	/* .text-desc {
 		font-size: 20px;
 	} */
-    header nav a{
-        color: black;
-    }
+    
     .selected{
         background-color: unset;
         padding: 0px;
@@ -228,6 +310,7 @@ header nav a{
         color: #3E7BFA;
     
     }
+    
     /* HOME */
     .home-banner{
         height: 450px;
@@ -246,6 +329,25 @@ header nav a{
         width: 35px;
         bottom: -28px;
         right: 50px;
+    }
+    /* COMPONENT */
+    /* HEADER */
+    .hideOnMobile{
+        display: none;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    .sidebar li a{
+        color: black;
+    }
+    .language{
+        width: 25px;
+        height: 25px;
+    }
+    /* Swiper */
+    .swiper-button-next:after, .swiper-button-prev:after{
+        font-size: 25px !important;
     }
 }
 @media (min-width: 768px) and (max-width: 1025px) {
