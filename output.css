@@ -3018,7 +3018,7 @@ header nav a{
 /* HOME */
 
 .home-banner{
-  background-image: url('/source/img/banner-color.png');
+  background-image: url('source/img/banner-color.png');
   height: 816px;
   background-size:cover;
   background-repeat: no-repeat;
@@ -3041,7 +3041,7 @@ header nav a{
 /* SERVICES */
 
 #services .banner{
-  background-image: url('/source/img/service-banner.png');
+  background-image: url('source/img/service-banner.png');
   background-repeat: no-repeat;
   /* Do not repeat the image */
   background-size: cover;
@@ -3051,7 +3051,7 @@ header nav a{
 /* Services Detail */
 
 #services-detail .banner{
-  background-image: url('/source/img/service-banner.png');
+  background-image: url('source/img/service-banner.png');
   background-repeat: no-repeat;
   /* Do not repeat the image */
   background-size: cover;
@@ -3059,7 +3059,7 @@ header nav a{
 }
 
 #about .banner{
-  background-image: url('/source/img/service-banner.png');
+  background-image: url('source/img/service-banner.png');
   background-repeat: no-repeat;
   /* Do not repeat the image */
   background-size: cover;
@@ -3067,7 +3067,7 @@ header nav a{
 }
 
 #contact .banner{
-  background-image: url('/source/img/service-banner.png');
+  background-image: url('source/img/service-banner.png');
   background-repeat: no-repeat;
   /* Do not repeat the image */
   background-size: cover;

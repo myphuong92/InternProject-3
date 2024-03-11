@@ -3,8 +3,13 @@ const links = document.querySelectorAll(".header-line li");
 links.forEach((li) => {
   const link = li.querySelector("a");
   const href = link.getAttribute("href");
-  if (currentPage === href) {
+  // Trim leading slashes from currentPage and href for consistent comparison
+  const trimmedCurrentPage = currentPage.replace(/^\/+/, "");
+  const trimmedHref = href.replace(/^\/+/, "");
+  if (trimmedCurrentPage === trimmedHref) {
     li.classList.add("selected-link");
+  } else {
+    console.error("Anchor element not found in list item:", li);
   }
 });
 console.log(currentPage);

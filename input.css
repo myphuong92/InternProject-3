@@ -191,7 +191,7 @@ header nav a{
 
 /* HOME */
 .home-banner{
-    background-image: url('/source/img/banner-color.png');
+    background-image: url('source/img/banner-color.png');
     height: 816px;
     background-size:cover;
     background-repeat: no-repeat;
@@ -211,23 +211,23 @@ header nav a{
 
 /* SERVICES */
 #services .banner{
-    background-image: url('/source/img/service-banner.png');
+    background-image: url('source/img/service-banner.png');
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 /* Services Detail */
 #services-detail .banner{
-    background-image: url('/source/img/service-banner.png');
+    background-image: url('source/img/service-banner.png');
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 #about .banner{
-    background-image: url('/source/img/service-banner.png');
+    background-image: url('source/img/service-banner.png');
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 #contact .banner{
-    background-image: url('/source/img/service-banner.png');
+    background-image: url('source/img/service-banner.png');
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
