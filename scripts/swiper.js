@@ -3,10 +3,10 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  //   autoplay: {
-  //     delay: 2500,
-  //     disableOnInteraction: false,
-  //   },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 });
 var swiper1 = new Swiper(".mySwiper1", {
   slidesPerView: 3,

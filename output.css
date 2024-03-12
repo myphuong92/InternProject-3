@@ -2995,6 +2995,7 @@ header nav a{
 .sidebar.active{
   transform: translateX(0);
   opacity: 1;
+  width: 100%;
 }
 
 .sidebar li{
@@ -3014,6 +3015,7 @@ header nav a{
 }
 
 .sidebar a {
+  color: black;
   height: 100%;
   padding: 0px 20px;
   text-decoration: none;
@@ -3148,6 +3150,10 @@ header nav a{
   color: white !important;
 }
 
+.hideOnMobile{
+  display: block;
+}
+
 @media screen and (max-width: 767px) {
   .container {
     /* padding-left: 20px;
@@ -3206,6 +3212,12 @@ header nav a{
   }
 
   /* COMPONENT */
+
+  /* Header */
+
+  .hideOnMobile{
+    display: none;
+  }
 
   /* Swiper */
 

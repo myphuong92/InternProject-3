@@ -166,6 +166,7 @@ header nav a{
 .sidebar.active{
     transform: translateX(0);
     opacity: 1;
+    width: 100%;
 }
 .sidebar li{
     width: 100%;
@@ -182,6 +183,7 @@ header nav a{
 }
 
 .sidebar a {
+    color: black;
     height: 100%;
     padding: 0px 20px;
     text-decoration: none;
@@ -283,6 +285,9 @@ header nav a{
 .swiper-button-next, .swiper-button-prev{
     color: white !important;
 }
+.hideOnMobile{
+    display: block;
+}
 @media screen and (max-width: 767px) {
 	.container {
 		/* padding-left: 20px;
@@ -331,7 +336,10 @@ header nav a{
         right: 50px;
     }
     /* COMPONENT */
-    
+    /* Header */
+    .hideOnMobile{
+        display: none;
+    }
     /* Swiper */
     .swiper-button-next:after, .swiper-button-prev:after{
         font-size: 25px !important;
