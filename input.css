@@ -270,10 +270,10 @@ header nav a{
     width: 100%;
     height: 100%;
 }
-.swiper-slide{
+.mySwiper .swiper-slide{
     background-image: linear-gradient(to right, #0E2C5B, #164BA0, #619DFD);
 }
-.swiper-slide img {
+.mySwiper .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
@@ -336,6 +336,10 @@ header nav a{
     .swiper-button-next:after, .swiper-button-prev:after{
         font-size: 25px !important;
     }
+    /* Contact form */
+    .contact-form .icon-contact{
+        width: 65px;
+    }
 }
 @media (min-width: 768px) and (max-width: 1025px) {
 	.container {
@@ -366,4 +370,6 @@ header nav a{
         width: 25px;
         height: 25px;
     }
+    
+    
 }
