@@ -2,14 +2,19 @@ const currentPage = window.location.pathname;
 const links = document.querySelectorAll(".header-line li");
 links.forEach((li) => {
   const link = li.querySelector("a");
-  const href = link.getAttribute("href");
-  // Trim leading slashes from currentPage and href for consistent comparison
-  const trimmedCurrentPage = currentPage.replace(/^\/+/, "");
-  const trimmedHref = href.replace(/^\/+/, "");
-  if (trimmedCurrentPage === trimmedHref) {
-    li.classList.add("selected-link");
-  } else {
-    console.error("Anchor element not found in list item:", li);
+  if (link) {
+    const href = link.getAttribute("href");
+    if (href) {
+      console.log(href);
+      // Trim leading slashes from currentPage and href for consistent comparison
+      const trimmedCurrentPage = currentPage.replace(/^\/+/, "");
+      const trimmedHref = href.replace(/^\/+/, "");
+      if (trimmedCurrentPage === trimmedHref) {
+        li.classList.add("selected-link");
+      } else {
+        console.error("Anchor element not found in list item:", li);
+      }
+    }
   }
 });
 console.log(currentPage);
@@ -36,3 +41,12 @@ function hideSidebar() {
 //   });
 //   e.classList.add("selected-link");
 // }
+// Header
+document.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+  if (window.scrollY > 0) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});

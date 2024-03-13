@@ -29,3 +29,14 @@ var swiper1 = new Swiper(".mySwiper1", {
 });
 swiper1.loopDestroy();
 swiper1.loopCreate();
+
+var swiper2 = new Swiper(".mySwiper2", {
+  slidesPerView: 1,
+  loop: true,
+  spaceBetween: 10,
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});

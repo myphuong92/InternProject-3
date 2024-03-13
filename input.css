@@ -6,7 +6,7 @@
         @apply space-grotesk-medium text-sm text-[#3E7BFA];
     }
     .text-desc-lg{
-        @apply uppercase space-grotesk-bold text-5xl
+        @apply uppercase space-grotesk-bold text-3xl lg:text-5xl
     }
     .responsive-section{
         @apply p-[20px] md:p-[40px] lg:p-[100px]
@@ -126,12 +126,18 @@ body {
 /* HEADER */
 header{
     transition: transform 0.2s;
+    background-color: transparent;
+    transition: background-color 0.4s ease-in-out;
+
+}
+header.scrolled{
+    background-color: black;
+    opacity: 0.98;
 }
 header nav a{
     color: white;
     font-weight: 700;
 }
-
 .selected-link{
     background-color: white;
     padding: 10px 20px;
@@ -200,12 +206,12 @@ header nav a{
     
 }
 #home .quote-begin{
-    left: 40px;
-    top: -70px;
+    left: 120px;
+    top: -50px;
 }
 #home .quote-end{
     bottom: -60px;
-    right: 60px;
+    right: 100px;
 }
 #home .img-home-banner{
     height: -webkit-fill-available;
@@ -285,6 +291,9 @@ header nav a{
 .swiper-button-next, .swiper-button-prev{
     color: white !important;
 }
+.mySwiper2 .swiper-slide{
+    display: flex;
+}
 .hideOnMobile{
     display: block;
 }
@@ -340,6 +349,12 @@ header nav a{
     .hideOnMobile{
         display: none;
     }
+    header .language{
+        width: 25px;
+    }
+    a.header-logo{
+        width: 60px;
+    }
     /* Swiper */
     .swiper-button-next:after, .swiper-button-prev:after{
         font-size: 25px !important;
@@ -379,5 +394,8 @@ header nav a{
         height: 25px;
     }
     
-    
+    /* COMPONENT */
+    .contact-form .phone-contact{
+        font-size: 20px;
+    }
 }

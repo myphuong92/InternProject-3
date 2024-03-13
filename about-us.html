@@ -16,8 +16,8 @@
 </head>
 <body>
   <header class="fixed w-full z-10">
-    <nav class="flex justify-between items-center w-[92%] mx-auto py-2 ">
-      <a href="index.html" class="h-full cursor-pointer"><img class="home-banner-img" src="source/icon/Logo.png" alt=""></a>
+    <nav class="flex justify-between items-center w-[92%] mx-auto py-2">
+      <a href="index.html" class="h-full cursor-pointer header-logo"><img class="home-banner-img" src="source/icon/Logo.png" alt=""></a>
       <div class="nav-links md:bg-inherit min-h-fit w-auto md:flex items-center px-5">
         <ul class="header-line hidden lg:flex flex-row  items-center gap-6 lg:gap-[4vw] inter-bold ">
           <li><a href="about-us.html" class="hideOnMobile cursor-pointer">Về chúng tôi</a></li>
@@ -27,7 +27,7 @@
           <li><a class="hideOnMobile cursor-pointer">Các ngành nghề</a></li>
           <li><a href="contact.html" class="hideOnMobile cursor-pointer">Liên hệ</a></li>
         </ul>
-        <ul class="sidebar">
+        <ul class="sidebar space-grotesk-normal tracking-[0.25rem] uppercase">
           <li class="close-icon" onclick="hideSidebar()"><a><span class="material-symbols-outlined text-black">close</span></a></li>
           <li><a>Tư Vấn Doanh Nghiệp</a></li>
           <li><a>Thuế</a></li>
@@ -35,10 +35,10 @@
           <li><a>Liên hệ</a></li>
         </ul>
       </div>
-      <div class="flex gap-2">
-        <span class="material-symbols-outlined text-white">search</span>
-        <img class="language" src="source/icon/GB.png" alt="">
-        <div class="lg:hidden">
+      <div class="flex gap-2 md:gap-4">
+        <span class="material-symbols-outlined text-white cursor-pointer">search</span>
+        <img class="language cursor-pointer" src="source/icon/GB.png" alt="">
+        <div class="lg:hidden cursor-pointer">
           <span onclick="showSidebar()" class="material-symbols-outlined text-white">menu</span>
         </div>
       </div>
@@ -126,39 +126,39 @@
         </section>
     </main>
     <footer>
-        <div class="responsive-section bg-[#090E23] grid grid-cols-1 gap-y-10 md:gap-y-20 divide-y-2 divide-white divide-dashed">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-0 text-white">
-            <div class=" w-5/6 lg:w-[60%]">
-              <img src="source/icon/logo-footer.png" alt="">
-              <p class=" roboto-regular text-desc mt-3">Our business philosophy in Vietnam is simple - We want to be the market leader in terms of client service</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2  gap-5 ">
-              <div class="flex flex-col gap-4">
-                <p class="inter-bold text-2xl">Navigation</p>
-                <div class="nav-footer inter-regular flex flex-col gap-3">
-                  <a href="">Về chúng tôi</a>
-                  <a href="">Dịch vụ và giải pháp</a>
-                  <a href="">Tư vấn doanh nghiệp</a>
-                  <a href="">Thuế</a>
-                </div>
-              </div>
-              <div class="flex flex-col gap-4">
-                <p class="inter-bold text-2xl">Subscribe Us</p>
-                <div class="flex flex-col gap-3">
-                  <input class="p-4 rounded-xl roboto-regular" type="email" name="" id="" placeholder="Enter Your Email">
-                  <button class="py-4 px-5 lg:px-14  bg-[#EC4621] text-white space-grotesk-medium rounded-xl text-lg">Subscribe Now</button>
-                </div>
-                
+      <div class="responsive-section bg-[#090E23] grid grid-cols-1 gap-y-10 md:gap-y-20 divide-y-2 divide-white divide-dashed">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-0 text-white">
+          <div class=" w-5/6 lg:w-[60%]">
+            <img src="source/icon/logo-footer.png" alt="">
+            <p class=" roboto-regular text-desc mt-3">Our business philosophy in Vietnam is simple - We want to be the market leader in terms of client service</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2  gap-5 ">
+            <div class="flex flex-col gap-4">
+              <p class="inter-bold text-2xl">Navigation</p>
+              <div class="nav-footer inter-regular flex flex-col gap-3">
+                <a href="">Về chúng tôi</a>
+                <a href="">Dịch vụ và giải pháp</a>
+                <a href="">Tư vấn doanh nghiệp</a>
+                <a href="">Thuế</a>
               </div>
             </div>
-            
-            
+            <div class="flex flex-col gap-4">
+              <p class="inter-bold text-2xl">Subscribe Us</p>
+              <div class="flex flex-col gap-3">
+                <input class="p-3 lg:p-4 rounded-xl roboto-regular" type="email" name="" id="" placeholder="Enter Your Email">
+                <button class="py-3 lg:py-4 px-5 lg:px-14  bg-[#EC4621] text-white space-grotesk-medium rounded-xl text-lg">Subscribe Now</button>
+              </div>
+              
+            </div>
           </div>
-          <div class="pt-12">
-            <p class="uppercase text-white text-center space-grotesk-medium text-lg">Copyright &copy; 2023 AAA</p>
-          </div>
+          
+          
         </div>
-      </footer>
+        <div class="pt-6 md:pt-12">
+          <p class="uppercase text-white text-center space-grotesk-medium text-lg">Copyright &copy; 2023 AAA</p>
+        </div>
+      </div>
+    </footer>
       <script src="scripts/script.js"></script>
 
 </body>
