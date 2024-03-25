@@ -834,6 +834,14 @@ video {
   margin-right: auto;
 }
 
+.-mb-\[40px\] {
+  margin-bottom: -40px;
+}
+
+.mb-\[-40px\] {
+  margin-bottom: -40px;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -2298,6 +2306,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -2386,6 +2399,11 @@ video {
   line-height: 1;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -2399,6 +2417,10 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[32px\] {
+  font-size: 32px;
 }
 
 .font-bold {
@@ -2477,8 +2499,8 @@ video {
   letter-spacing: 0.25rem;
 }
 
-.tracking-widest {
-  letter-spacing: 0.1em;
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 
 .text-\[\#02122C\] {
@@ -2967,7 +2989,15 @@ header.scrolled{
 
 header nav a{
   color: white;
-  font-weight: 700;
+  font-weight: 500;
+}
+
+header .header-search{
+  font-size: 30px;
+}
+
+header .language{
+  width: 30px;
 }
 
 .selected-link{
@@ -3033,6 +3063,15 @@ header nav a{
   display: flex;
   align-items: center;
 }
+
+/* FOOTER */
+
+/* footer .footer-link{
+    transition: .24 ease;
+}
+footer .footer-link:hover{
+    padding-left: 10px;
+} */
 
 /* HOME */
 
@@ -3226,6 +3265,10 @@ header nav a{
     right: 50px;
   }
 
+  .swiper-button-prev::after, .swiper-rtl .swiper-button-next:after{
+    content: unset !important;
+  }
+
   /* COMPONENT */
 
   /* Header */
@@ -3236,6 +3279,7 @@ header nav a{
 
   header .language{
     width: 25px;
+    height: 25px;
   }
 
   a.header-logo{
@@ -3287,7 +3331,7 @@ header nav a{
     color: black;
   }
 
-  .language{
+  header .language{
     width: 25px;
     height: 25px;
   }
@@ -3304,6 +3348,9 @@ header nav a{
   background-color: rgb(18 29 80 / var(--tw-bg-opacity)) !important;
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25) !important;
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }
 
 .hover\:selected-service:hover {
@@ -3390,6 +3437,18 @@ header nav a{
     height: 500px;
   }
 
+  .md\:h-4\/6 {
+    height: 66.666667%;
+  }
+
+  .md\:h-1\/2 {
+    height: 50%;
+  }
+
+  .md\:h-\[60\%\] {
+    height: 60%;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -3430,6 +3489,10 @@ header nav a{
     background-color: inherit;
   }
 
+  .md\:p-6 {
+    padding: 1.5rem;
+  }
+
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -3443,6 +3506,26 @@ header nav a{
   .md\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .md\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:px-\[1rem\] {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .md\:pt-12 {
@@ -3470,6 +3553,14 @@ header nav a{
 
   .lg\:h-\[600px\] {
     height: 600px;
+  }
+
+  .lg\:h-\[400px\] {
+    height: 400px;
+  }
+
+  .lg\:h-full {
+    height: 100%;
   }
 
   .lg\:w-3\/4 {
@@ -3518,9 +3609,14 @@ header nav a{
     padding-right: 3.5rem;
   }
 
-  .lg\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .lg\:py-36 {
@@ -3531,6 +3627,16 @@ header nav a{
   .lg\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .lg\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .lg\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 
   .lg\:text-6xl {

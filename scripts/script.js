@@ -1,5 +1,8 @@
 const currentPage = window.location.pathname;
 const links = document.querySelectorAll(".header-line li");
+document.addEventListener("click", function (event) {
+  console.log(event.target); // Console log phần tử được click
+});
 links.forEach((li) => {
   const link = li.querySelector("a");
   if (link) {
@@ -12,7 +15,6 @@ links.forEach((li) => {
       if (trimmedCurrentPage === trimmedHref) {
         li.classList.add("selected-link");
       } else {
-        console.error("Anchor element not found in list item:", li);
       }
     }
   }
@@ -33,6 +35,7 @@ function hideSidebar() {
     });
   }
 }
+
 // function handleNav(e) {
 //   // Remove selected-link class from all links
 //   links = document.querySelectorAll(".header-line li");

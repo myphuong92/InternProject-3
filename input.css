@@ -16,7 +16,7 @@
     }
     /* Card service */
     .selected-card-service{
-        @apply bg-[#121D50] text-white !important;
+        @apply bg-[#121D50] text-white shadow-2xl !important;
     }
     .selected-service{
         @apply bg-[#3E7BFA] text-white !important;
@@ -136,7 +136,13 @@ header.scrolled{
 }
 header nav a{
     color: white;
-    font-weight: 700;
+    font-weight: 500;
+}
+header .header-search{
+    font-size: 30px;
+}
+header .language{
+    width: 30px;
 }
 .selected-link{
     background-color: white;
@@ -196,7 +202,13 @@ header nav a{
     display: flex;
     align-items: center;
 }
-
+/* FOOTER */
+/* footer .footer-link{
+    transition: .24 ease;
+}
+footer .footer-link:hover{
+    padding-left: 10px;
+} */
 /* HOME */
 .home-banner{
     background-image: url('source/img/banner-color.png');
@@ -344,6 +356,9 @@ header nav a{
         bottom: -28px;
         right: 50px;
     }
+    .swiper-button-prev::after, .swiper-rtl .swiper-button-next:after{
+        content: unset !important;
+    }
     /* COMPONENT */
     /* Header */
     .hideOnMobile{
@@ -351,6 +366,7 @@ header nav a{
     }
     header .language{
         width: 25px;
+        height: 25px;
     }
     a.header-logo{
         width: 60px;
@@ -389,7 +405,7 @@ header nav a{
     .sidebar li a{
         color: black;
     }
-    .language{
+    header .language{
         width: 25px;
         height: 25px;
     }
