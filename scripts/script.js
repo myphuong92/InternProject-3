@@ -29,8 +29,13 @@ function showSidebar() {
 function hideSidebar() {
   const close = document.querySelector(".close-icon");
   const sidebar = document.querySelector(".sidebar");
+
   if (sidebar) {
-    close.addEventListener("click", function () {
+    close.addEventListener("click", function (event) {
+      event.stopPropagation(); // Stop event propagation
+      sidebar.classList.remove("active");
+    });
+    sidebar.addEventListener("click", function () {
       sidebar.classList.remove("active");
     });
   }
