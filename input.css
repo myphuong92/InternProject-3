@@ -202,6 +202,9 @@ header .language{
     display: flex;
     align-items: center;
 }
+.header-line{
+    display: flex;
+}
 /* FOOTER */
 /* footer .footer-link{
     transition: .24 ease;
@@ -361,6 +364,9 @@ footer .footer-link:hover{
     }
     /* COMPONENT */
     /* Header */
+    .header-line{
+        display:none;
+    }
     .hideOnMobile{
         display: none;
     }
@@ -398,7 +404,9 @@ footer .footer-link:hover{
         display: none;
     }
     /* HEADER */
-    
+    .header-line{
+        display: none;
+    }
     .sidebar{
         width: 100%;
     }

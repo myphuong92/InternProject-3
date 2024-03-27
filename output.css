@@ -3055,6 +3055,10 @@ header .language{
   align-items: center;
 }
 
+.header-line{
+  display: flex;
+}
+
 /* FOOTER */
 
 /* footer .footer-link{
@@ -3264,6 +3268,10 @@ footer .footer-link:hover{
 
   /* Header */
 
+  .header-line{
+    display:none;
+  }
+
   .hideOnMobile{
     display: none;
   }
@@ -3313,6 +3321,10 @@ footer .footer-link:hover{
   }
 
   /* HEADER */
+
+  .header-line{
+    display: none;
+  }
 
   .sidebar{
     width: 100%;
